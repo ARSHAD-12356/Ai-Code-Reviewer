@@ -1,0 +1,91 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+}
+.css-dvlfeb-control{
+  width: 30% !important;
+}
+
+.btnNormal{
+  padding: 10px;
+  color: #fff;
+  border-radius: 10px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+.css-b62m3t-container{
+  width: 75%;
+  gap: 10px;
+}
+.css-n6ipte-control{
+  width: 100%;
+}
+
+p{
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  color: rgb(230, 219, 219);
+}
+.res{
+  color: #fff;
+}
+p > strong{
+  font-size: 20px !important;
+  color: #fff;
+}
+ul li{
+  color: rgb(230, 219, 219);
+  margin-top: 10px !important;
+  list-style: circle !important;
+}
+
+li span{
+  color: #fff;
+}
+
+pre{
+  background-color: #121214 !important;
+  padding: 10px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #212121;
+}
+
+/* Handle on hover
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+} */
+
+
+/* Rsponsive */
+
+.logo svg{
+  margin-left: 20px;
+}
+
+i svg{
+  margin-right: 20px;
+}
+.btn{
+  margin-right: 20px !important;
+}
