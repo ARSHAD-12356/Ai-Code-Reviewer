@@ -1,131 +1,159 @@
 /* Dark mode styles */
 body.dark-mode {
-    background-color: #1e1e1e; /* Matches the dark background in App.jsx */
-    color: #ffffff; /* White text for better contrast */
-  }
-  
-  /* Button styles */
-  .darkmode-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    background-color: #27272a; /* Matches the dark gray used in App.jsx */
-    color: #ffffff; /* White text for the button */
-    border: 1px solid #333; /* Subtle border for the button */
-    border-radius: 5px; /* Rounded corners */
-    padding: 8px 12px; /* Padding for a compact button */
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-  }
-  
-  .darkmode-btn:hover {
-    background-color: #333; /* Slightly lighter gray on hover */
-    border-color: #555; /* Highlighted border on hover */
-    color: #9333ea; /* Matches the purple accent color in App.jsx */
-  }
+  background-color: #1e1e1e;
+  /* Matches the dark background in App.jsx */
+  color: #ffffff;
+  /* White text for better contrast */
+}
+
+/* Button styles */
+.darkmode-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #27272a !important;
+  /* Matches the dark gray used in App.jsx */
+  color: #ffffff;
+  /* White text for the button */
+  border: 1px solid #333;
+  /* Subtle border for the button */
+  border-radius: 5px;
+  /* Rounded corners */
+  padding: 8px 12px;
+  /* Padding for a compact button */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.darkmode-btn:hover {
+  background-color: #333;
+  /* Slightly lighter gray on hover */
+  border-color: #555;
+  /* Highlighted border on hover */
+  color: #9333ea;
+  /* Matches the purple accent color in App.jsx */
+}
 
 
-  
-  /* Icon and text styling */
-  .darkmode-btn svg {
-    color: #ffffff; /* Icon color */
-    transition: color 0.3s ease;
-  }
-  
-  .darkmode-btn:hover svg {
-    color: #9333ea; /* Purple icon on hover */
-  }
-  
-  .darkmode-text {
-    font-size: 14px; /* Matches the font size in App.jsx */
-    font-weight: 500; /* Medium font weight */
-    color: inherit; /* Inherits the button's text color */
-    transition: color 0.3s ease;
-  }
-  
-  /* Dark mode-specific styles for other elements */
-  body.dark-mode .navbar {
-    background-color: #27272a; /* Matches the navbar background in dark mode */
-    border-bottom: 1px solid #333; /* Subtle border for the navbar */
-  }
-  
-  body.dark-mode .main {
-    background-color: #1e1e1e; /* Matches the main container background */
-    color: #ffffff; /* White text for content */
-  }
-  
-  body.dark-mode .toptab {
-    /* background-color: gray; Matches the top tab background */
-    border-color: #333; /* Matches the border color */
-    border: 1px solid #27272a;
-  }
 
-    
-  body.dark-mode .toptab .res{
-    color: #000;
-    background-color: tan;
-    margin-left: 20px;
-    padding: 2px 2px;
-  }
-  body.dark-mode .nav-Container{
-    background-color: #ffffff;
-    color: #1e1e1e;
-  }
-  body.dark-mode .nav-Container span{
-    color: #1e1e1e;
-  }
-  body.dark-mode .darkmode-btn{
-    background-color: #ffffff;
-  }
+/* Icon and text styling */
+.darkmode-btn svg {
+  color: #ffffff;
+  /* Icon color */
+  transition: color 0.3s ease;
+}
 
-  body.dark-mode .main{
-    background-color: #ffffff;
-    color: #1e1e1e;
-    border: 1px solid #1e1e1e;
-  }
-  body.dark-mode .left{
-    border: 1px solid #1e1e1e;
-  }
-  body.dark-mode .css-1k5uyiw-control{
-    
-    background-color: rgba(220, 224, 227, 0.962);
-    color: #000;
-  }
-  body.dark-mode .css-1k5uyiw-control:hover{
-    background-color: rgb(206, 209, 212);
-    color: #000;
-  }
-  body.dark-mode .css-ewcdco-singleValue{
-    color: #000;
-    font-weight: 600;
-    font-weight: 400;
-  }
-  body.dark-mode .css-tj5bde-Svg path{
-    color: #000;
-  }
-  body.dark-mode .css-ghqo9f-menu{
-    background-color: aliceblue;
-  }
-  body.dark-mode .btnNormal{
-    background-color: aliceblue;
-    color: black;
-    border: 1px solid black;
-    font-weight: 500;
-  }
-  body.dark-mode .btnNormal:hover{
-    background-color: rgb(209, 215, 215);
-    transition: all 1s ease;
-  }
+.darkmode-btn:hover svg {
+  color: #9333ea;
+  /* Purple icon on hover */
+}
 
-  body.dark-mode *{
-    background-color: #adaeca;
-  }
+.darkmode-text {
+  font-size: 14px;
+  /* Matches the font size in App.jsx */
+  font-weight: 500;
+  /* Medium font weight */
+  color: inherit;
+  /* Inherits the button's text color */
+  transition: color 0.3s ease;
+}
 
-  body.dark-mode .css-1n67sik{
-    background-color: rgb(245, 247, 251);
-    color: black;
-  }
-  body.dark-mode .css-1n67sik input{
-    color: #000 !important;
-  }
+/* Dark mode-specific styles for other elements */
+body.dark-mode .navbar {
+  background-color: #27272a;
+  /* Matches the navbar background in dark mode */
+  border-bottom: 1px solid #333;
+  /* Subtle border for the navbar */
+}
+
+body.dark-mode .main {
+  background-color: #1e1e1e;
+  /* Matches the main container background */
+  color: #ffffff;
+  /* White text for content */
+}
+
+body.dark-mode .toptab {
+  /* background-color: gray; Matches the top tab background */
+  border-color: #333;
+  /* Matches the border color */
+  border: 1px solid #27272a;
+}
+
+
+body.dark-mode .toptab .res {
+  color: #000;
+  background-color: tan;
+  margin-left: 20px;
+  padding: 2px 2px;
+}
+
+body.dark-mode .nav-Container {
+  background-color: #ffffff;
+  color: #1e1e1e;
+}
+
+body.dark-mode .nav-Container span {
+  color: #1e1e1e;
+}
+
+body.dark-mode .darkmode-btn {
+  background-color: #ffffff;
+}
+
+body.dark-mode .main {
+  background-color: #ffffff;
+  color: #1e1e1e;
+  border: 1px solid #1e1e1e;
+}
+
+body.dark-mode .left {
+  border: 1px solid #1e1e1e;
+}
+
+body.dark-mode .css-1k5uyiw-control {
+
+  background-color: rgba(220, 224, 227, 0.962);
+  color: #000;
+}
+
+body.dark-mode .css-1k5uyiw-control:hover {
+  background-color: rgb(206, 209, 212);
+  color: #000;
+}
+
+body.dark-mode .css-ewcdco-singleValue {
+  color: #000;
+  font-weight: 600;
+  font-weight: 400;
+}
+
+body.dark-mode .css-tj5bde-Svg path {
+  color: #000;
+}
+
+body.dark-mode .css-ghqo9f-menu {
+  background-color: aliceblue;
+}
+
+body.dark-mode .btnNormal {
+  background-color: aliceblue;
+  color: black;
+  border: 1px solid black;
+  font-weight: 500;
+}
+
+body.dark-mode .btnNormal:hover {
+  background-color: rgb(209, 215, 215);
+  transition: all 1s ease;
+}
+
+/* body.dark-mode * {
+  background-color: #adaeca;
+} */
+
+/* body.dark-mode .css-1n67sik {
+  background-color: rgb(233, 235, 240);
+  color: black;
+} */

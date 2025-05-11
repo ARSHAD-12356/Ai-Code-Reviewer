@@ -1,35 +1,30 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./darkmode.css";
 import { Sun, Moon } from "lucide-react";
+import { useTheme } from "../../../hooks/useTheme";
+import { Helmet } from "react-helmet";
 
 const Darkmode = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const { isDark, toggleTheme } = useTheme();
 
-  useEffect(() => {
-    // Apply the dark mode class to the body
-    if (isDarkMode) {
-      document.body.classList.add("dark-mode");
-    } else {
-      document.body.classList.remove("dark-mode");
-    }
-  }, [isDarkMode]);
 
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-  };
+  <Helmet>
+     <body className={!isDark ? "dark-mode" : ""} />
+  </Helmet>
+
 
   return (
     <button
       className="darkmode-btn border border-s-2 border-gray-400 mr-4 btn"
-      onClick={toggleDarkMode}
+      onClick={toggleTheme}
     >
-      {isDarkMode ? (
+      {isDark ? (
         <Moon size={20} className="bg-black rounded-xl" />
       ) : (
         <Sun size={20} />
       )}
       <span className="darkmode-text">
-        {isDarkMode ? "Dark Mode" : "Light Mode"}
+        {isDark ? "Dark Mode" : "Light Mode"}
       </span>
     </button>
   );

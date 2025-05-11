@@ -6,8 +6,10 @@ import Select from "react-select";
 import { GoogleGenAI } from "@google/genai";
 import Markdown from "react-markdown";
 import RingLoader from "react-spinners/RingLoader";
+import { useTheme } from "../hooks/useTheme";
 
 const App = () => {
+  const { isDark } = useTheme();
   const options = [
     { value: "javascript", label: "JavaScript" },
     { value: "python", label: "Python" },
@@ -36,9 +38,9 @@ const App = () => {
   const customDarkStyles = {
     control: (provided) => ({
       ...provided,
-      backgroundColor: "#1e1e1e",
+      backgroundColor: !isDark ? "#1e1e1e" : "#fff",
       borderColor: "#333",
-      color: "#fff",
+      color: !isDark ? "#fff" : "#000",
       boxShadow: "none",
       "&:hover": {
         borderColor: "#555",
@@ -48,7 +50,7 @@ const App = () => {
     menu: (provided) => ({
       ...provided,
       backgroundColor: "#1e1e1e",
-      color: "#fff",
+      color: !isDark ? "#fff" : "#000",
       width: "100%",
     }),
     option: (provided, state) => ({
@@ -56,26 +58,26 @@ const App = () => {
       backgroundColor: state.isFocused
         ? "#333"
         : state.isSelected
-        ? "#555"
-        : "#1e1e1e",
-      color: "#fff",
+          ? "#555"
+          : "#1e1e1e",
+          color: !isDark ? "#fff" : "#000",
       "&:active": {
         backgroundColor: "#444",
       },
     }),
     singleValue: (provided) => ({
       ...provided,
-      color: "#fff",
+      color: !isDark ? "#fff" : "#000",
       width: "100%",
     }),
     placeholder: (provided) => ({
       ...provided,
-      color: "#aaa",
+      color: !isDark ? "#fff" : "#000",
       width: "100%",
     }),
     input: (provided) => ({
       ...provided,
-      color: "#fff",
+      color: !isDark ? "#fff" : "#000",
       width: "100%",
     }),
   };
@@ -154,7 +156,7 @@ Code: ${code}
             className="editor"
             language={selectedOptions.value}
             value={code}
-            theme="vs-dark"
+            theme={!isDark ? "vs-dark" : "light"}
             onChange={(e) => {
               setCode(e);
             }}
